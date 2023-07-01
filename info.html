@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="container-fluid" style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;background-color: #A6BB8D;">
+        <nav class="navbar">
+            <a class="navbar-brand" href="admin">Home</a>
+            <a class="navbar-brand" href="info">Info</a>
+            <a class="navbar-brand" href="post">Posts</a>
+            <a class="navbar-brand" href="./">Logout</a>
+        </nav></div>
+        <div class="container " style="margin-top: 6rem;">
+            <table class="table table-dark table-hover">
+                <h4>Volunteer</h4>
+                <tr>
+                <th>id</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Phone</th>
+                <th>State</th>
+                <th>District</th>
+                <th>Username</th>
+                <th>Password</th>
+                <th>Date</th>
+                </tr>
+                {% for i in data %}
+                <tr>
+                   <td>{{i.id}}</td>
+                   <td><h6>{{i.name}}</h6></td> 
+                    <td><h6>{{i.age}}</h6></td>
+                    <td><h6>{{i.Phone}}</h6></td>
+                    <td><h6>{{i.State}}</h6></td>
+                    <td><h6>{{i.District}}</h6></td>
+                    <td><h6>{{i.username}}</h6></td>
+                    <td><h6>{{i.password}}</h6></td>
+                    <td><h6>{{i.date}}</h6></td>
+                </tr>
+                {% endfor%}
+              </table>
+        </div>
+        <div class="container " style="margin-top: 6rem;">
+            <table class="table table-dark table-hover">
+                <h4>Police</h4>
+                <tr>
+                <th>id</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Phone</th>
+                <th>State</th>
+                <th>District</th>
+                <th>Username</th>
+                <th>Password</th>
+                <th>Date</th>
+                </tr>
+                {% for i in data1 %}
+                <tr>
+                   <td>{{i.id}}</td>
+                   <td><h6>{{i.name}}</h6></td> 
+                    <td><h6>{{i.age}}</h6></td>
+                    <td><h6>{{i.Phone}}</h6></td>
+                    <td><h6>{{i.State}}</h6></td>
+                    <td><h6>{{i.District}}</h6></td>
+                    <td><h6>{{i.username}}</h6></td>
+                    <td><h6>{{i.password}}</h6></td>
+                    <td><h6>{{i.date}}</h6></td>
+                </tr>
+                {% endfor%}
+              </table>
+        </div>
+        <div class="container " style="margin-top: 6rem;">
+            <table class="table table-dark table-hover">
+                <h4>Member</h4>
+                <tr>
+                <th>id</th>
+                <th>Name</th>
+               <th>Phone</th>
+                <th>Email</th>
+                <th>State</th>
+                <th>District</th>
+                <th>Username</th>
+                <th>Password</th>
+                <th>Date</th>
+                </tr>
+                {% for i in data2 %}
+                <tr>
+                   <td>{{i.id}}</td>
+                   <td><h6>{{i.name}}</h6></td> 
+                    <td><h6>{{i.Phone}}</h6></td>
+                    <td><h6>{{i.email}}</h6></td>
+                    <td><h6>{{i.State}}</h6></td>
+                    <td><h6>{{i.District}}</h6></td>
+                    <td><h6>{{i.username}}</h6></td>
+                    <td><h6>{{i.password}}</h6></td>
+                    <td><h6>{{i.date}}</h6></td>
+                </tr>
+                {% endfor%}
+              </table>
+        </div>
+</body>
+</html>
